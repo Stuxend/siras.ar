@@ -1,0 +1,44 @@
+{
+  "name": "siras-landing",
+  "version": "1.0.0",
+  "description": "Modern landing page for SIRAS - Security Incident Response Automated Simulations",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "serve": "python -m http.server 8000",
+    "build": "echo 'No build process required for static site'",
+    "deploy": "echo 'Deploy to your preferred hosting service'"
+  },
+  "keywords": [
+    "siras",
+    "security",
+    "incident-response",
+    "automation",
+    "simulation",
+    "landing-page",
+    "cybersecurity",
+    "devsecops"
+  ],
+  "author": "SIRAS Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Stuxend/siras.git"
+  },
+  "homepage": "https://github.com/Stuxend/siras#readme",
+  "bugs": {
+    "url": "https://github.com/Stuxend/siras/issues"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

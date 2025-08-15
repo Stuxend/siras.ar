@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIRAS - Security Incident Response Automated Simulations</title>
+    <meta name="description" content="Automate, Simulate, Respond. SIRAS helps security teams simulate real-world cyber incidents and validate their response plans automatically.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-shield-alt"></i>
+                <span>SIRAS</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How it Works</a>
+                <a href="#demo">Demo</a>
+                <a href="https://github.com/Stuxend/siras" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Open Source</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="gradient-text">SIRAS</span>
+                </h1>
+                <h2 class="hero-tagline">Automate, Simulate, Respond.</h2>
+                <p class="hero-description">
+                    SIRAS helps security teams simulate real-world cyber incidents like ransomware or phishing and validate their response plans — automatically.
+                </p>
+                <div class="hero-cta">
+                    <div class="email-form">
+                        <form action="https://formspree.io/f/xjkozgbe" method="POST" id="hero-formspree-form">
+                            <input type="email" name="email" placeholder="Enter your email" id="hero-email" required>
+                            <button type="submit" id="hero-submit">
+                                <span>Get Early Access</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <p class="cta-note">Join <span id="waitlist-count">hundreds of</span> security professionals on the waitlist</p>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span class="terminal-title">siras-cli</span>
+                    </div>
+                    <div class="terminal-content">
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command">siras -s ransomware -b true</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="output">🚀 Starting ransomware simulation...</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="output">📊 Monitoring 15 endpoints</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="output">🔍 Detected suspicious activity</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="output success">✅ Response plan executed successfully</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="cursor">_</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why SIRAS Section -->
+    <section class="why-siras">
+        <div class="container">
+            <h2 class="section-title">Why SIRAS?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Automate Incident Response</h3>
+                    <p>Run realistic cyber incident simulations automatically without manual setup. Focus on what matters - your response strategy.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Validate Detection & Playbooks</h3>
+                    <p>Test your security controls against real-world scenarios. Ensure your detection rules and response playbooks actually work.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>Open Source & Developer Friendly</h3>
+                    <p>Built by security professionals, for security professionals. MIT licensed, extensible, and community-driven.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How it Works</h2>
+            <p class="section-subtitle">Four simple steps to transform your incident response capabilities</p>
+            
+            <div class="workflow-container">
+                <div class="workflow-step">
+                    <div class="step-visual">
+                        <div class="step-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <div class="step-number">1</div>
+                        <div class="step-connector"></div>
+                    </div>
+                    <div class="step-content">
+                        <h3>Define Your Scenario</h3>
+                        <p>Choose from our library of pre-built scenarios or create custom ones tailored to your specific environment and threat landscape.</p>
+                        <div class="step-features">
+                            <div class="feature-tag">
+                                <i class="fas fa-shield-alt"></i>
+                                Ransomware
+                            </div>
+                            <div class="feature-tag">
+                                <i class="fas fa-envelope"></i>
+                                Phishing
+                            </div>
+                            <div class="feature-tag">
+                                <i class="fas fa-database"></i>
+                                Data Exfiltration
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="workflow-step">
+                    <div class="step-visual">
+                        <div class="step-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="step-number">2</div>
+                        <div class="step-connector"></div>
+                    </div>
+                    <div class="step-content">
+                        <h3>Launch Simulation</h3>
+                        <p>Trigger simulations instantly via API, CLI, or scheduled automation. Seamlessly integrate with your existing security stack.</p>
+                        <div class="step-features">
+                            <div class="feature-tag">
+                                <i class="fas fa-code"></i>
+                                API Integration
+                            </div>
+                            <div class="feature-tag">
+                                <i class="fas fa-terminal"></i>
+                                CLI Commands
+                            </div>
+                            <div class="feature-tag">
+                                <i class="fas fa-clock"></i>
+                                Scheduled
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="workflow-step">
+                    <div class="step-visual">
+                        <div class="step-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="step-number">3</div>
+                        <div class="step-connector"></div>
+                    </div>
+                    <div class="step-content">
+                        <h3>Monitor & Respond</h3>
+                        <p>Track your team's response in real-time with live dashboards. Get instant alerts and notifications across all channels.</p>
+                        <div class="step-features">
+                            <div class="feature-tag">
+                                <i class="fab fa-slack"></i>
+                                Slack Alerts
+                            </div>
+                            <div class="feature-tag">
+                                <i class="fas fa-bell"></i>
+                                Real-time Notifications
+                            </div>
+                            <div class="feature-tag">
+                                <i class="fas fa-eye"></i>
+                                Live Monitoring
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="workflow-step">
+                    <div class="step-visual">
+                        <div class="step-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="step-number">4</div>
+                    </div>
+                    <div class="step-content">
+                        <h3>Analyze & Improve</h3>
+                        <p>Generate comprehensive reports, identify response gaps, and continuously enhance your incident response capabilities.</p>
+                        <div class="step-features">
+                            <div class="feature-tag">
+                                <i class="fas fa-file-alt"></i>
+                                Detailed Reports
+                            </div>
+                            <div class="feature-tag">
+                                <i class="fas fa-search"></i>
+                                Gap Analysis
+                            </div>
+                            <div class="feature-tag">
+                                <i class="fas fa-arrow-up"></i>
+                                Continuous Improvement
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Scenario Library</h3>
+                    <p>Pre-built scenarios covering common attack vectors with customizable parameters.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>API-Driven</h3>
+                    <p>RESTful API for seamless integration with your existing security stack and automation tools.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Runbook Integration</h3>
+                    <p>Automatically execute and validate your incident response runbooks during simulations.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fab fa-slack"></i>
+                    </div>
+                    <h3>Slack/Webhook Alerts</h3>
+                    <p>Real-time notifications to your team via Slack, Microsoft Teams, or custom webhooks.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>MITRE ATT&CK Alignment</h3>
+                    <p>All scenarios mapped to MITRE ATT&CK framework for comprehensive threat coverage.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Multi-Cloud Support</h3>
+                    <p>Currently AWS, with Azure and GCP support coming soon. Deploy anywhere.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SIRAS-SaaS Dashboard Section -->
+    <section class="siras-saas" id="demo">
+        <div class="container">
+            <h2 class="section-title">SIRAS+ Dashboard</h2>
+            <p class="section-subtitle">Professional incident response simulation platform with real-time analytics and team collaboration</p>
+            <div class="dashboard-container">
+                <div class="dashboard-header">
+                    <div class="dashboard-nav">
+                        <button class="nav-tab active" data-tab="overview">Overview</button>
+                        <button class="nav-tab" data-tab="simulations">Simulations</button>
+                        <button class="nav-tab" data-tab="analytics">Analytics</button>
+                        <button class="nav-tab" data-tab="team">Team</button>
+                    </div>
+                    <div class="dashboard-actions">
+                        <button class="btn-secondary">
+                            <i class="fas fa-plus"></i>
+                            New Simulation
+                        </button>
+                        <button class="btn-primary">
+                            <i class="fas fa-rocket"></i>
+                            Start Free Trial
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="dashboard-content">
+                    <!-- Overview Tab -->
+                    <div class="tab-content active" id="overview">
+                        <div class="dashboard-grid">
+                            <div class="metric-card">
+                                <div class="metric-header">
+                                    <h3>Active Simulations</h3>
+                                    <i class="fas fa-play-circle"></i>
+                                </div>
+                                <div class="metric-value">12</div>
+                                <div class="metric-change positive">
+                                    <i class="fas fa-arrow-up"></i>
+                                    +3 this week
+                                </div>
+                            </div>
+                            
+                            <div class="metric-card">
+                                <div class="metric-header">
+                                    <h3>Response Time</h3>
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="metric-value">2.3m</div>
+                                <div class="metric-change positive">
+                                    <i class="fas fa-arrow-down"></i>
+                                    -0.5m avg
+                                </div>
+                            </div>
+                            
+                            <div class="metric-card">
+                                <div class="metric-header">
+                                    <h3>Success Rate</h3>
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="metric-value">94%</div>
+                                <div class="metric-change positive">
+                                    <i class="fas fa-arrow-up"></i>
+                                    +2% this month
+                                </div>
+                            </div>
+                            
+                            <div class="metric-card">
+                                <div class="metric-header">
+                                    <h3>Team Members</h3>
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="metric-value">8</div>
+                                <div class="metric-change neutral">
+                                    <i class="fas fa-minus"></i>
+                                    No change
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="dashboard-charts">
+                            <div class="chart-container">
+                                <h3>Recent Simulations</h3>
+                                <div class="simulation-timeline">
+                                    <div class="timeline-item completed">
+                                        <div class="timeline-icon">
+                                            <i class="fas fa-check"></i>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <h4>Ransomware Attack</h4>
+                                            <p>Completed 2 hours ago</p>
+                                            <div class="timeline-meta">
+                                                <span class="status success">Success</span>
+                                                <span class="duration">1.8m response time</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="timeline-item completed">
+                                        <div class="timeline-icon">
+                                            <i class="fas fa-check"></i>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <h4>Phishing Campaign</h4>
+                                            <p>Completed 5 hours ago</p>
+                                            <div class="timeline-meta">
+                                                <span class="status success">Success</span>
+                                                <span class="duration">2.1m response time</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="timeline-item running">
+                                        <div class="timeline-icon">
+                                            <i class="fas fa-spinner fa-spin"></i>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <h4>Data Exfiltration</h4>
+                                            <p>Running for 15 minutes</p>
+                                            <div class="timeline-meta">
+                                                <span class="status running">In Progress</span>
+                                                <span class="duration">15m elapsed</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="chart-container">
+                                <h3>Performance Metrics</h3>
+                                <div class="performance-chart">
+                                    <div class="chart-bar">
+                                        <div class="bar-label">Detection</div>
+                                        <div class="bar-container">
+                                            <div class="bar-fill" style="width: 92%"></div>
+                                        </div>
+                                        <div class="bar-value">92%</div>
+                                    </div>
+                                    <div class="chart-bar">
+                                        <div class="bar-label">Response</div>
+                                        <div class="bar-container">
+                                            <div class="bar-fill" style="width: 88%"></div>
+                                        </div>
+                                        <div class="bar-value">88%</div>
+                                    </div>
+                                    <div class="chart-bar">
+                                        <div class="bar-label">Recovery</div>
+                                        <div class="bar-container">
+                                            <div class="bar-fill" style="width: 95%"></div>
+                                        </div>
+                                        <div class="bar-value">95%</div>
+                                    </div>
+                                    <div class="chart-bar">
+                                        <div class="bar-label">Communication</div>
+                                        <div class="bar-container">
+                                            <div class="bar-fill" style="width: 85%"></div>
+                                        </div>
+                                        <div class="bar-value">85%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Simulations Tab -->
+                    <div class="tab-content" id="simulations">
+                        <div class="simulations-grid">
+                            <div class="simulation-card">
+                                <div class="simulation-header">
+                                    <h3>Ransomware Attack</h3>
+                                    <span class="status-badge success">Active</span>
+                                </div>
+                                <p>Simulates a ransomware attack with file encryption and ransom demand</p>
+                                <div class="simulation-meta">
+                                    <span><i class="fas fa-clock"></i> 2.3m avg</span>
+                                    <span><i class="fas fa-users"></i> 5 participants</span>
+                                    <span><i class="fas fa-calendar"></i> Last run: 2h ago</span>
+                                </div>
+                                <div class="simulation-actions">
+                                    <button class="btn-small">View Details</button>
+                                    <button class="btn-small secondary">Edit</button>
+                                </div>
+                            </div>
+                            
+                            <div class="simulation-card">
+                                <div class="simulation-header">
+                                    <h3>Phishing Campaign</h3>
+                                    <span class="status-badge warning">Paused</span>
+                                </div>
+                                <p>Tests email security awareness and phishing detection capabilities</p>
+                                <div class="simulation-meta">
+                                    <span><i class="fas fa-clock"></i> 1.8m avg</span>
+                                    <span><i class="fas fa-users"></i> 8 participants</span>
+                                    <span><i class="fas fa-calendar"></i> Last run: 5h ago</span>
+                                </div>
+                                <div class="simulation-actions">
+                                    <button class="btn-small">View Details</button>
+                                    <button class="btn-small secondary">Edit</button>
+                                </div>
+                            </div>
+                            
+                            <div class="simulation-card">
+                                <div class="simulation-header">
+                                    <h3>Data Exfiltration</h3>
+                                    <span class="status-badge running">Running</span>
+                                </div>
+                                <p>Monitors data access patterns and unauthorized data transfer attempts</p>
+                                <div class="simulation-meta">
+                                    <span><i class="fas fa-clock"></i> 3.1m avg</span>
+                                    <span><i class="fas fa-users"></i> 3 participants</span>
+                                    <span><i class="fas fa-calendar"></i> Started: 15m ago</span>
+                                </div>
+                                <div class="simulation-actions">
+                                    <button class="btn-small">View Details</button>
+                                    <button class="btn-small secondary">Stop</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Analytics Tab -->
+                    <div class="tab-content" id="analytics">
+                        <div class="analytics-grid">
+                            <div class="analytics-card">
+                                <h3>Monthly Performance</h3>
+                                <div class="analytics-chart">
+                                    <div class="chart-line">
+                                        <div class="line-point" style="left: 10%; top: 80%"></div>
+                                        <div class="line-point" style="left: 25%; top: 60%"></div>
+                                        <div class="line-point" style="left: 40%; top: 40%"></div>
+                                        <div class="line-point" style="left: 55%; top: 30%"></div>
+                                        <div class="line-point" style="left: 70%; top: 20%"></div>
+                                        <div class="line-point" style="left: 85%; top: 15%"></div>
+                                        <div class="line-point" style="left: 100%; top: 10%"></div>
+                                    </div>
+                                </div>
+                                <div class="chart-labels">
+                                    <span>Week 1</span>
+                                    <span>Week 2</span>
+                                    <span>Week 3</span>
+                                    <span>Week 4</span>
+                                </div>
+                            </div>
+                            
+                            <div class="analytics-card">
+                                <h3>Team Performance</h3>
+                                <div class="team-performance">
+                                    <div class="team-member">
+                                        <div class="member-avatar">SC</div>
+                                        <div class="member-info">
+                                            <h4>Sarah Chen</h4>
+                                            <p>Lead Security Engineer</p>
+                                        </div>
+                                        <div class="member-stats">
+                                            <span class="stat-value">98%</span>
+                                            <span class="stat-label">Success Rate</span>
+                                        </div>
+                                    </div>
+                                    <div class="team-member">
+                                        <div class="member-avatar">MJ</div>
+                                        <div class="member-info">
+                                            <h4>Mike Johnson</h4>
+                                            <p>Security Analyst</p>
+                                        </div>
+                                        <div class="member-stats">
+                                            <span class="stat-value">92%</span>
+                                            <span class="stat-label">Success Rate</span>
+                                        </div>
+                                    </div>
+                                    <div class="team-member">
+                                        <div class="member-avatar">AL</div>
+                                        <div class="member-info">
+                                            <h4>Alex Lee</h4>
+                                            <p>Incident Responder</p>
+                                        </div>
+                                        <div class="member-stats">
+                                            <span class="stat-value">89%</span>
+                                            <span class="stat-label">Success Rate</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Team Tab -->
+                    <div class="tab-content" id="team">
+                        <div class="team-grid">
+                            <div class="team-card">
+                                <div class="team-header">
+                                    <h3>Active Team Members</h3>
+                                    <button class="btn-small">Invite</button>
+                                </div>
+                                <div class="team-list">
+                                    <div class="team-member-card">
+                                        <div class="member-avatar">SC</div>
+                                        <div class="member-details">
+                                            <h4>Sarah Chen</h4>
+                                            <p>Lead Security Engineer</p>
+                                            <span class="member-status online">Online</span>
+                                        </div>
+                                        <div class="member-actions">
+                                            <button class="btn-icon"><i class="fas fa-ellipsis-v"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="team-member-card">
+                                        <div class="member-avatar">MJ</div>
+                                        <div class="member-details">
+                                            <h4>Mike Johnson</h4>
+                                            <p>Security Analyst</p>
+                                            <span class="member-status busy">In Simulation</span>
+                                        </div>
+                                        <div class="member-actions">
+                                            <button class="btn-icon"><i class="fas fa-ellipsis-v"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="team-member-card">
+                                        <div class="member-avatar">AL</div>
+                                        <div class="member-details">
+                                            <h4>Alex Lee</h4>
+                                            <p>Incident Responder</p>
+                                            <span class="member-status offline">Offline</span>
+                                        </div>
+                                        <div class="member-actions">
+                                            <button class="btn-icon"><i class="fas fa-ellipsis-v"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="team-card">
+                                <div class="team-header">
+                                    <h3>Recent Activity</h3>
+                                </div>
+                                <div class="activity-feed">
+                                    <div class="activity-item">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                        <div class="activity-content">
+                                            <p><strong>Sarah Chen</strong> started a ransomware simulation</p>
+                                            <span class="activity-time">2 minutes ago</span>
+                                        </div>
+                                    </div>
+                                    <div class="activity-item">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-check"></i>
+                                        </div>
+                                        <div class="activity-content">
+                                            <p><strong>Mike Johnson</strong> completed phishing test</p>
+                                            <span class="activity-time">15 minutes ago</span>
+                                        </div>
+                                    </div>
+                                    <div class="activity-item">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-user-plus"></i>
+                                        </div>
+                                        <div class="activity-content">
+                                            <p><strong>Alex Lee</strong> joined the team</p>
+                                            <span class="activity-time">1 hour ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer CTA -->
+    <section class="footer-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Incident Response?</h2>
+                <p>Join <span id="footer-waitlist-count">hundreds of</span> security professionals and be among the first to experience automated security simulations.</p>
+                <div class="email-form">
+                    <form action="https://formspree.io/f/xjkozgbe" method="POST" id="footer-formspree-form">
+                        <input type="email" name="email" placeholder="Enter your email" id="footer-email" required>
+                        <button type="submit" id="footer-submit">
+                            <span>Join Waitlist</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/Stuxend/siras" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>SIRAS</span>
+                    </div>
+                    <p>Security Incident Response Automated Simulations</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How it Works</a>
+                    <a href="#demo">Demo</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <a href="https://github.com/Stuxend/siras" target="_blank">Documentation</a>
+                    <a href="https://github.com/Stuxend/siras" target="_blank">GitHub</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Privacy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SIRAS. MIT License. Built with ❤️ for the security community.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
